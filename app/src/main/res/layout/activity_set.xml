@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <include layout="@layout/activity_set_item"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/div_white"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#00ffffff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:background="@drawable/share"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="253dp"
+            android:layout_height="33dp"
+            android:background="#00ffffff"
+            android:text="趣事分享"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#00ffffff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@mipmap/photoword"
+            android:layout_width="30dp"
+            android:layout_height="33dp"/>
+        <Button
+            android:id="@+id/set_photoword"
+            android:layout_width="253dp"
+            android:layout_height="33dp"
+            android:background="#00ffffff"
+            android:text="我的图文"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#00ffffff"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@mipmap/myvideo"
+            android:layout_width="30dp"
+            android:layout_height="33dp"/>
+
+        <Button
+            android:id="@+id/set_video"
+            android:layout_width="253dp"
+            android:layout_height="33dp"
+            android:background="#00ffffff"
+            android:text="我的视频"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:background="#00ffffff"
+        />
+
+    <Button
+        android:id="@+id/drop_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        />
+
+</LinearLayout>

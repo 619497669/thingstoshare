@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.thinkcool.circletextimageview.CircleTextImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/portrait_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:citv_border_color="#FF000000"
+                app:citv_border_width="2dp"/>
+
+            <TextView
+                android:id="@+id/nickname_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="用户昵称"
+                android:textSize="17dp"
+                android:gravity="center|left"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+    android:id="@+id/video_image"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"/>
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </cn.jzvd.JZVideoPlayerStandard>
+
+
+
+</RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.thinkcool.circletextimageview.CircleTextImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/video_view_portrait"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:citv_border_color="#FF000000"
+                app:citv_border_width="2dp"/>
+
+            <TextView
+                android:id="@+id/video_view_nick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="用户昵称"
+                android:textSize="17dp"
+                android:gravity="center|left"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/video_view_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+
+    <com.example.graduationproject.CustomView.MyJZVideoPlayerStandard
+        android:id="@+id/video_view_player"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <ListView
+            android:id="@+id/video_view_list"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:layout_above="@id/photo_view_edit"
+            android:layout_weight="0.95"></ListView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/video_view_edit"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape"
+                android:padding="10px"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1.16"/>
+
+            <TextView
+                android:id="@+id/video_view_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="发表"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

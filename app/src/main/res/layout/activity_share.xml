@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_topbar">
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/text_topbar"
+            android:text="趣事"/>
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#00000000"
+            android:layout_above="@+id/view"
+            android:layout_alignParentEnd="true"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/div_white"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/view"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/share_edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="说点什么吧......"
+        android:padding="5dp"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:gravity="top|left"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/select_img_video"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@mipmap/find_add_img"/>
+       <TextView
+           android:id="@+id/button_Gridview"
+           android:layout_width="0.5dp"
+           android:layout_height="match_parent"
+           android:layout_toRightOf="@id/select_img_video"/>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/button_Gridview"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:verticalSpacing="5dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
